@@ -4,7 +4,7 @@
   "description": "Buscando dados na API Pública do Mercado Livre",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=8090 nodemon --exec babel-node src",
+    "start": "nodemon -r dotenv/config --exec babel-node src",
     "test": "jest --coverage --detectOpenHandles",
     "doc": "jsdoc src --destination ./docs"
   },

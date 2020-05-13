@@ -1,0 +1,59 @@
+{
+  "name": "api-ml",
+  "version": "0.0.1",
+  "description": "Buscando dados na API Pública do Mercado Livre",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=8090 nodemon --exec babel-node src",
+    "test": "jest --coverage --detectOpenHandles",
+    "doc": "jsdoc src --destination ./docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "jsdoc": "^3.6.4",
+    "restify": "^8.5.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.3"
+  },
+  "jest": {
+    "automock": false,
+    "verbose": true,
+    "bail": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 50,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    },
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/coverage/"
+    ]
+  }
+}

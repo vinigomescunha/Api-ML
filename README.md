@@ -47,3 +47,9 @@ A porta 8090 está ocupada
 ```
 fuser -k 8090/tcp
 ```
+
+### Postman - Exemplos
+
+Na pasta Postman tem os arquivos das collections e do ambiente, com exemplos
+
+Postman -> Import -> Files seleciona os arquivos, Collection Search -> basic search 

@@ -31,7 +31,8 @@
     "bail": true,
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.js"
+      "<rootDir>/src/**/*.js",
+      "!<rootDir>/src/index.js"
     ],
     "coverageReporters": [
       "json",
